@@ -13,9 +13,9 @@
 <!-- entire application console -->
     <div class = "container">
         <!-- Question and answer container with Answers-->
-        <div class ="question-answer-container">
+        <form class ="question-answer-container">
                 <div class = "question-container" style="background-color: aqua;">
-                    <h2> What is the answer to this question?</h2>
+                    <h2 id = "question-text"> What is the answer to this question?</h2>
                 </div>
                     <!-- 4 answer options (buttons )-->
                 <div class = "answers-container">
@@ -25,16 +25,16 @@
                     <button class = "btn" id=""> Answer 4</button>
                 </div>
 
-        </div>
+        </form>
 
-        
+        <button id= "start-game"> START GAME </button>
 
     </div>
 
     <!-- timer object-->
     <fieldset id = "timer-box">
         <div>
-            <h3 id="countdown">:60</h3>
+            <h3 id="countdown-screen">1:00</h3>
         </div>
     </fieldset>
 </body>
