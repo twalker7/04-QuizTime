@@ -6,36 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Time!</title>
     <link rel="stylesheet" href="assets/css/style.css"/>
-    <script defer src="assets/js/script.js"></script>
+   
 </head>
 <body>
 
 <!-- entire application console -->
     <div class = "container">
         <!-- Question and answer container with Answers-->
-        <form class ="question-answer-container">
-                <div class = "question-container" style="background-color: aqua;">
-                    <h2 id = "question-text"> What is the answer to this question?</h2>
+        <div class ="question-answer-container">
+                <div class = "question-container" style="background-color: rgb(148, 151, 151);">
+                    <h2 id = "question-text"> The question will appear here when the quiz begins</h2>
                 </div>
-                    <!-- 4 answer options (buttons )-->
+                    <!-- 4 answer options (buttons)-->
                 <div class = "answers-container">
-                    <button class = "btn" id=""> Answer 1 </button>
-                    <button class = "btn" id=""> Answer 2</button>
-                    <button class = "btn" id=""> Answer 3</button>
-                    <button class = "btn" id=""> Answer 4</button>
+                    <button class = "btn" id="choice1-button" data-index="0"> </button>
+                    <button class = "btn" id="choice2-button" data-index="1"></button>
+                    <button class = "btn" id="choice3-button" data-index="2"></button>
+                    <button class = "btn" id="choice4-button" data-index="3"></button>
                 </div>
 
-        </form>
+        </div>
+<!-- game navigation buttons to start and go to next question set -->
+        
+        <div id= "nav-button container">
+            <button id= "start-game-button" class="game-nav">START GAME</button>
+        <br>
+            <button id="next-button" class="game-nav">NEXT</button>
+        </div>
+        
+        
+    
+        <fieldset id = "timer-box">
+            <div>
+                <h3 id="countdown-screen">1:00</h3>
+            </div>
+        </fieldset>
 
-        <button id= "start-game"> START GAME </button>
+        <div class="score-container">
+            <h4> Current Score</h4>
+            <span id="currentScoreDisplay">  </span>
+        </div>
 
+        <button id="highscores-button"> View High Scores </button>
+   
     </div>
 
-    <!-- timer object-->
-    <fieldset id = "timer-box">
-        <div>
-            <h3 id="countdown-screen">1:00</h3>
-        </div>
-    </fieldset>
+    <!-- timer   -->
+   
+
+  
+       
+       
+
+
+    <script defer src="assets/js/script.js"></script>
 </body>
-</html>
