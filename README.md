@@ -11,9 +11,9 @@ HTML, CSS, JavaScript
 
 ## Snapshots of Application 
 
-![](assets/images/Screen Shot 2021-05-16 at 10.39.11 PM.png)
+![](assets/images/screenshot1.png)
 
-![](assets/images/Screen Shot 2021-05-16 at 10.40.37 PM.png)
+![](assets/images/screenshot2.png)
 
 ![]()
 
@@ -21,4 +21,4 @@ HTML, CSS, JavaScript
 https://twalker7.github.io/04-QuizTime/
 
 ## Contribution 
-I built all aspects of this application from scratch, initial using online tutorials to give me ideas, but realizing that I could create a simpler application on my own when it came down to specific implementations. My biggest divergence from conventional approaches is in how I chose to validate correct answers. I allowed each button to contain its own knowledge of when it was a valid selection --based on the current index of thequiz question array 
+I built all aspects of this application from scratch, initial using online tutorials to give me ideas, but realizing that I could create a simpler application on my own when it came down to specific implementations. My biggest divergence from conventional approaches is in how I chose to validate correct answers. I allowed each button to contain its own knowledge of when it was a valid selection --based on the current index of the quiz question array.
