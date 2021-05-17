@@ -21,9 +21,10 @@ var highscoresArr= [];
 var currentPlayerName;
 //the timecut
 var timeCut = 0;
-// timer countdown function 
+// timer countdown function with external/global timeLeft variable 
+var timeLeft = 59;
 var startCountDown = function(){
-    var timeLeft = 59; 
+  
 
     var timeInterval = setInterval(function(){
         if( timeLeft > 0 && timeCut === 0){
@@ -122,7 +123,7 @@ var questionPush = ()=>{
      }else{
         timeCut++;
         questionCount++;
-        currentPlayerName = prompt("You have completed the quiz! Insert your name") + " -score: " + currentScore;
+        currentPlayerName = prompt("You have completed the quiz! Insert your name") + " - score: " + currentScore + " with " + timeLeft + " seconds to spare";
         highscoresArr.push(currentPlayerName);
         var scoreLog = localStorage.setItem("highscores", JSON.stringify(highscoresArr));
         //localStorage.setItem("names", currentPlayerName);
@@ -201,7 +202,7 @@ var choiceChecker4 = function(){
     
 
 
-    // high scores button functions but does not retrieve any more than the last "highscore"
+    // high scores button functions but does not retrieve any more than the last "high score"
     var highscoresButton = document.querySelector("#highscores-button");
     highscoresButton.addEventListener("click", function(){
        // alert(localStorage.getItem("names"));
