@@ -72,7 +72,7 @@ var startCountDown = function(){
     
     },
     {
-        question: "6. How many bytes are in single char?",
+        question: "6. How many bytes are in a single char?",
         choices: ["1", "2", "4", "8"],
         answerIndex: 0
     
@@ -104,7 +104,7 @@ var names = "shit";
 var questionCount = 0 ;
 var questionPush = ()=>{
     if(gameToken < 1){
-        alert("start the game first!");
+        alert("start the quiz first!");
         return false;
     }
      console.log("questionPush button pressed");
