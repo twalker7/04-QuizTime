@@ -13,7 +13,7 @@ body{
     background-size: cover; /* or contain depending on what you want */
     background-position: center;
     background-repeat: repeat;
-    background-attachment: fixed;
+   
 }
 
 .container{
